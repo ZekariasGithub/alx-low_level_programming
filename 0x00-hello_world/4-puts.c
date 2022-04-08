@@ -1,4 +1,4 @@
-#inlude <studio.h>
+#include <studio.h>
 
 /**
   *main - Entry point
