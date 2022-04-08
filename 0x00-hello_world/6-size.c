@@ -1,10 +1,10 @@
- 1 #include <stdio.h>
-  2 /**
-  3   *main - Entry point
-  4   *Return: Always 0 (Success)
-  5   */
-  6 int main(void)
-  7 {
+  #include <stdio.h>
+  /**
+    *main - Entry point
+    *Return: Always 0 (Success)
+  */
+  int main(void)
+  {
 	  int a;
 	  long int b;
 	  long long int c;
