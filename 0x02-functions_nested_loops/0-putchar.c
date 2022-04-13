@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-  *main-main bloc
-  *description - this program returns _putchar.h
-  *Return 0- this program returns 0
-  */
+*main - Entry point
+*
+*Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	_putchar('_');
