@@ -1,19 +1,18 @@
 #include "main.h"
 /**
 *jack_bauer - print minuits
-*@n: the integer to be checked
-*Return: 
+*Return:
  */
 
 void jack_bauer(void)
 {
 	int hour, minute;
 
-	for (hour =0; hour <= 23; hour++)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		for (minute = 0; minute <=59; minute++)
+		for (minute = 0; minute <= 59; minute++)
 		{
-			_putchar((hour /10) + '0');
+			_putchar((hour / 10) + '0');
 			_putchar((hour % 10) + '0');
 			_putchar(':');
 			_putchar((minute / 10) + '0');
