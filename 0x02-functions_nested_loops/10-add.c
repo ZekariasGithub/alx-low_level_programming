@@ -1,6 +1,5 @@
 #include "main.h"
 /**
-*main - Entry point
 *add - adds two integers
 *@n: the first integer to be added
 *@m: the second integer to be added
