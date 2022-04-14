@@ -1,5 +1,4 @@
 #include "main.h"
-#include "6-abs.c"
 /**
 *print_last_digit - display the last digit of an intiger
 *@n: the integer to be checked
@@ -8,10 +7,10 @@
 
 int print_last_digit(int n)
 {
-	int last_digit;
+	int last_digit = n % 10;
 
-	last_digit = n % 10;
-	last_digit = _abs(last_digit);
+	if (last_digit < 0)
+		last_digit *= -1;
 
 	return (last_digit);
 }
