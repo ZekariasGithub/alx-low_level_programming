@@ -1,9 +1,9 @@
 #include "main.h"
 /**
 *main - Entry point
-*@m: element 1 to be added
-@n: element 2 to be added
 *add - computes the sum of two integers
+*@n: the first integer to be added
+*@m: the second integer to be added
 *Return: sum
  */
 
