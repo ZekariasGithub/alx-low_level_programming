@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *main - Entry point
-*_add - computes the sum of two integers
+*add - adds two integers
 *@n: the first integer to be added
 *@m: the second integer to be added
 *Return: sum
