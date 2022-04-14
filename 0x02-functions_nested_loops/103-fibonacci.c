@@ -23,7 +23,7 @@ int main(void)
 		if (totSum >= 4000000)
 			break;
 	}
-	printf("%.of\n", totSum);
+	printf("%lu\n", totSum);
 
 	return (0);
 }
