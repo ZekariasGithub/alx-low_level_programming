@@ -1,5 +1,5 @@
 #include <stdio.h>
-11;rgb:0000/0000/0000/**
+/**
 *print_to_98 - prints from number to 98
 *@n: is the number to be printed from
 *Return: sum
