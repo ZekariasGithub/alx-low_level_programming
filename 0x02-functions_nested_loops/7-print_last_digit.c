@@ -1,4 +1,5 @@
 #include "main.h"
+#include "6-abs.c"
 /**
 *print_last_digit - display the last digit of an intiger
 *@n: the integer to be checked
