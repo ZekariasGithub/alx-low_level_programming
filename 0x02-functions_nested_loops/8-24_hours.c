@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-*print_last_digit - display the last digit of an intiger
+*jack_bauer - print minuits
 *@n: the integer to be checked
-*Return: the last idgit of an integer
+*Return: 
  */
 
-int print_last_digit(int n)
+void jack_bauer(void)
 {
 	int hour, minute;
 
