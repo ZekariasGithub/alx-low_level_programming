@@ -20,7 +20,7 @@ int main(void)
 		fib2 = sum;
 		sum = fib1 + fib2;
 
-		if (totSUm >= 4000000)
+		if (totSum >= 4000000)
 			break;
 	}
 	printf("%.of\n", totSum);
