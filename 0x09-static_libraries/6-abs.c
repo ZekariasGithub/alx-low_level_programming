@@ -1,12 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strchr - locates a character in a string
- * @s: string input
- * @c: character to find
- * Return: pointer to first occurence of c character
+ * _abs - value absolute
+ *
+ *@n: The int to print
+ * Return: Always 0.
  */
 
 int _abs(int n)
 {
+
+if (n < 0)
+{
+return (n * (-1));
+}
+
+else if (n == 0)
+{
+return (0);
+}
+
+else
+{
+return (n);
+}
+
 }
