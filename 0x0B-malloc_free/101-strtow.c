@@ -82,5 +82,5 @@ char **strtow(char *str)
 			c = length = 0;
 			str++;
 		}
-	}return (words);
+	} return (words);
 }
