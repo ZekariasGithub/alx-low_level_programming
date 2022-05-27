@@ -1,64 +1,69 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * binary_to_uint - converts binary num to uint
- * Return: uint
- * @b: binary number as string
+ * _pow - function that return the
+ * value of x raised to the power of y
+ *
+ * @x: parameter to base
+ * @y: parameter of pow
+ *
+ * Return: End program
+ */
+int _pow(int x, int y)
+{
+	if (y < 0)
+	{
+		return (-1);
+	}
+	else if (y == 0)
+	{
+		return (1);
+	}
+	else
+	{
+		y--;
+		x = x * _pow(x, y);
+		return (x);
+	}
+
+	return (0);
+}
+/**
+ * binary_to_uint - function that converts a binary number to an
+ * unsigned int
+ *
+ * @b: Pointer with the string whit the number to convert
+ *
+ * Return: The number converted
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec, size, i, exp;
+	unsigned int sum = 0;
+	int i, x, n;
 
-	if (!b)
+	if (b == NULL)
+	{
 		return (0);
-	size = _strlen(b);
-	i = 0;
-	dec = 0;
-	exp = size - 1;
-
-	while (b[i])
-	{
-		if (b[i] == '1')
-			dec += power(2, exp);
-		else if (b[i] != '0')
-			return (0);
-		exp--;
-		i++;
 	}
-	return (dec);
-}
-/**
- * _strlen - len of string.
- * @s: is a pointer to a char
- * Return: len.
- */
 
-unsigned int _strlen(const char *s)
-{
-	unsigned int i = 0;
+	n = strlen(b) - 1;
 
-	while (*(s + i) != '\0')
+	/* Realizamos la operacion para hallar suma */
+	for (x = 0, i = 0; n >= x; n--)
 	{
-		i++;
+		switch (b[i])
+		{
+			case '1':
+				sum = sum + _pow(2, n);
+				i++;
+				break;
+			case '0':
+				sum = sum + 0;
+				i++;
+				break;
+			default:
+				return (0);
+		}
 	}
-	return (i);
-}
-/**
- * power - power of base
- * @base: base
- * @exp: exponent
- * Return: base raised to exp
- */
-unsigned int power(unsigned int base, unsigned int exp)
-{
-	unsigned int i = 0;
-	unsigned int raised = 1;
 
-
-	if (exp == 0)
-		return (1);
-
-	for (i = 0; i < exp; i++)
-		raised = raised * base;
-	return (raised);
+	return (sum);
 }
